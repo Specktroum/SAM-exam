@@ -1,0 +1,298 @@
+@import "font.css";
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     color: aliceblue;
+}
+html , body{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: comfortaa;
+     background-color: #262938;
+     overflow: hidden;
+}
+ul ,ol ,li{
+     list-style-type: none;
+     list-style: none;
+}
+.btn{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: montserrat;
+     color: whitesmoke;
+     width: 180px;
+     height: 40px;
+     border: 0;
+     border-radius: 6px;
+     margin: 5px;
+     background-color: #2a3d52;
+}
+.btn-Analytics{
+     background-color: #6d60ff;
+     box-shadow: 1px 1px 10px #6d60ff;
+}
+.btn-eCommerce{
+     margin: 0;
+     background-color: transparent;
+}
+.v-menu{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 5px 7px;
+     width: 18%;
+     height: 100vh;
+     background-color: #18205e;
+     box-shadow: 0 0 10px #000842;
+}
+.v-menu .v-menu-upper{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     height: 10%;
+     color: rgb(25, 0, 255);
+     margin-bottom: 10px;
+}
+.v-menu .v-menu-upper .v-menu-logo{
+     width: 25%;
+}
+.v-menu .v-menu-upper span{
+     font-family: comfortaa;
+     font-size: x-large;
+}
+.margin{
+     margin-left: 50px;
+}
+.apps{
+     font-size: x-small;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-start;
+     padding-left: 10px;
+     width: 100%;
+     height: 40%;
+     color: silver;
+     margin-top: 10px;
+}
+.UI li{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.apps li{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.UI{
+     font-size: x-small;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: flex-start;
+     padding-left: 10px;
+     width: 100%;
+     height: 40%;
+     color: silver;
+     margin-top: 10px;
+}
+.content{
+     display: grid;
+     grid-template-areas:
+     "navbar navbar navbar navbar navbar navbar"
+     "congratulation congratulation subscribe subscribe orders orders"
+     "congratulation congratulation subscribe subscribe orders orders"
+     "sessions sessions sessions support support support";
+     padding: 15px;
+     width: 930px;
+     height: 100vh;
+}
+.v-navbar{
+     grid-area: navbar;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     height: 12vh;
+     padding: 5px 15px;
+     background-color: #0f143c;
+     border-radius: .7em;
+     box-shadow: 0 0 10px #0f143c;
+}
+.congratulation{
+     height: 100px;
+     margin: 10px;
+     background-color: rgba(0, 76, 255, 0.2);
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     grid-area: congratulation;
+     background-image: url(images/blob.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.orders{
+     height: 100px;
+     margin: 10px;
+     grid-area: orders;
+     background-color: rgba(0, 76, 255, 0.2);
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     background-image: url(images/blob.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.subscribe{
+     height: 100px;
+     margin: 10px;
+     grid-area: subscribe;
+     background-color: rgba(0, 76, 255, 0.2);
+     border-radius: 5px;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     justify-content: center;
+     background-image: url(images/blob.svg);
+     background-position: center;
+     background-repeat: no-repeat;
+}
+.sessions{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     margin: 10px;
+     border-radius: 5px;
+     background-color: rgba(0, 76, 255, 0.3);
+     grid-area: sessions;
+}
+.sessions .things{
+     margin: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.sessions .things .other *{
+     margin: 10px;
+}
+.sessions .things .other{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+.support{
+     padding: 10px;
+     margin: 10px;
+     border-radius: 5px;
+     background-color: rgba(0, 76, 255, 0.3);
+     grid-area: support;
+}
+.support .things{
+     margin: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.support .things .other *{
+     margin: 10px;
+}
+.support .things .other{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+}
+.support img{
+     transform: scale(.7) translateY(-2em) translateX(2em);
+}
+.v-navbar .objects{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 25%;
+     height: 100%;
+}
+.v-navbar .Personal-Information{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 40%;
+     height: 100%;
+}
+.v-navbar .Personal-Information box-icon{
+     transform: scale(3);
+     margin: 0 10px;
+}
+.v-navbar .Personal-Information .person{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: whitesmoke;
+}
+.v-navbar .Personal-Information .person img{
+     width: 30%;
+     height: 100%;
+     border-radius: 50%;
+}
+.ano{
+     display: none;
+     font-size: xx-small;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgb(25, 0, 255);
+}
+.bno{
+     display: none;
+     font-size: xx-small;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgb(25, 0, 255);
+}
+.cno{
+     display: none;
+     font-size: xx-small;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgb(25, 0, 255);
+}
+.dno{
+     display: none;
+     font-size: xx-small;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgb(25, 0, 255);
+}
+.eno{
+     display: none;
+     font-size: xx-small;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgb(25, 0, 255);
+}
+.fno{
+     display: none;
+     font-size: xx-small;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgb(25, 0, 255);
+}
+.gno{
+     display: none;
+     font-size: xx-small;
+     border-radius: 5px;
+     text-align: center;
+     background-color: rgb(25, 0, 255);
+}
